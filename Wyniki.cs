@@ -19,9 +19,16 @@ namespace OSK2
                 this.results1[i] = results[0, i];
                 this.results2[i] = results[1, i];
                 this.results3[i] = results[2, i];
+                this.mean[0] += this.results1[i]/5;
+                this.mean[1] += this.results2[i]/5;
+                this.mean[2] += this.results3[i]/5;
             }
-            this.parent = parent;
+            
+            this.parent = parent;           
             InitializeComponent();
+            this.label_mean1.Text = this.mean[0].ToString() + " ms";
+            this.label_mean2.Text = this.mean[1].ToString() + " ms";
+            this.label_mean3.Text = this.mean[2].ToString() + " ms";
         }
 
         private void Wyniki_Load(object sender, EventArgs e)
@@ -32,6 +39,11 @@ namespace OSK2
         }
 
         private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

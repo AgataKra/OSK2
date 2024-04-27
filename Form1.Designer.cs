@@ -74,7 +74,6 @@ namespace OSK2
             this.button_test3 = new System.Windows.Forms.Button();
             this.button_results = new System.Windows.Forms.Button();
             this.button_reset = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,8 +84,8 @@ namespace OSK2
             this.pomocToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,35 +97,35 @@ namespace OSK2
             this.help_test2,
             this.help_test3});
             this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
-            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.pomocToolStripMenuItem.Text = "Pomoc";
             this.pomocToolStripMenuItem.Click += new System.EventHandler(this.pomocToolStripMenuItem_Click);
             // 
             // help_tester
             // 
             this.help_tester.Name = "help_tester";
-            this.help_tester.Size = new System.Drawing.Size(104, 22);
+            this.help_tester.Size = new System.Drawing.Size(131, 26);
             this.help_tester.Text = "Tester";
             this.help_tester.Click += new System.EventHandler(this.help_tester_Click);
             // 
             // help_test1
             // 
             this.help_test1.Name = "help_test1";
-            this.help_test1.Size = new System.Drawing.Size(104, 22);
+            this.help_test1.Size = new System.Drawing.Size(131, 26);
             this.help_test1.Text = "Test 1";
             this.help_test1.Click += new System.EventHandler(this.help_test1_Click);
             // 
             // help_test2
             // 
             this.help_test2.Name = "help_test2";
-            this.help_test2.Size = new System.Drawing.Size(104, 22);
+            this.help_test2.Size = new System.Drawing.Size(131, 26);
             this.help_test2.Text = "Test 2";
             this.help_test2.Click += new System.EventHandler(this.help_test2_Click);
             // 
             // help_test3
             // 
             this.help_test3.Name = "help_test3";
-            this.help_test3.Size = new System.Drawing.Size(104, 22);
+            this.help_test3.Size = new System.Drawing.Size(131, 26);
             this.help_test3.Text = "Test 3";
             this.help_test3.Click += new System.EventHandler(this.help_test3_Click);
             // 
@@ -134,9 +133,10 @@ namespace OSK2
             // 
             this.label_test1.AutoSize = true;
             this.label_test1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_test1.Location = new System.Drawing.Point(60, 60);
+            this.label_test1.Location = new System.Drawing.Point(80, 74);
+            this.label_test1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_test1.Name = "label_test1";
-            this.label_test1.Size = new System.Drawing.Size(192, 17);
+            this.label_test1.Size = new System.Drawing.Size(227, 20);
             this.label_test1.TabIndex = 1;
             this.label_test1.Text = "Test 1 - Test optyczny prosty";
             // 
@@ -144,9 +144,10 @@ namespace OSK2
             // 
             this.label_test2.AutoSize = true;
             this.label_test2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_test2.Location = new System.Drawing.Point(60, 180);
+            this.label_test2.Location = new System.Drawing.Point(80, 222);
+            this.label_test2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_test2.Name = "label_test2";
-            this.label_test2.Size = new System.Drawing.Size(201, 17);
+            this.label_test2.Size = new System.Drawing.Size(238, 20);
             this.label_test2.TabIndex = 2;
             this.label_test2.Text = "Test 2 - Test optyczny złożony";
             // 
@@ -154,17 +155,19 @@ namespace OSK2
             // 
             this.label_test3.AutoSize = true;
             this.label_test3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label_test3.Location = new System.Drawing.Point(60, 300);
+            this.label_test3.Location = new System.Drawing.Point(80, 369);
+            this.label_test3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_test3.Name = "label_test3";
-            this.label_test3.Size = new System.Drawing.Size(163, 17);
+            this.label_test3.Size = new System.Drawing.Size(193, 20);
             this.label_test3.TabIndex = 3;
             this.label_test3.Text = "Test 3 - Test akustyczny";
             // 
             // button_test1
             // 
-            this.button_test1.Location = new System.Drawing.Point(63, 80);
+            this.button_test1.Location = new System.Drawing.Point(84, 98);
+            this.button_test1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_test1.Name = "button_test1";
-            this.button_test1.Size = new System.Drawing.Size(189, 23);
+            this.button_test1.Size = new System.Drawing.Size(252, 28);
             this.button_test1.TabIndex = 4;
             this.button_test1.Text = "Rozpocznij test";
             this.button_test1.UseVisualStyleBackColor = true;
@@ -172,9 +175,10 @@ namespace OSK2
             // 
             // button_test2
             // 
-            this.button_test2.Location = new System.Drawing.Point(63, 200);
+            this.button_test2.Location = new System.Drawing.Point(84, 246);
+            this.button_test2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_test2.Name = "button_test2";
-            this.button_test2.Size = new System.Drawing.Size(189, 23);
+            this.button_test2.Size = new System.Drawing.Size(252, 28);
             this.button_test2.TabIndex = 5;
             this.button_test2.Text = "Rozpocznij test";
             this.button_test2.UseVisualStyleBackColor = true;
@@ -182,9 +186,10 @@ namespace OSK2
             // 
             // button_test3
             // 
-            this.button_test3.Location = new System.Drawing.Point(63, 320);
+            this.button_test3.Location = new System.Drawing.Point(84, 394);
+            this.button_test3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_test3.Name = "button_test3";
-            this.button_test3.Size = new System.Drawing.Size(189, 23);
+            this.button_test3.Size = new System.Drawing.Size(252, 28);
             this.button_test3.TabIndex = 6;
             this.button_test3.Text = "Rozpocznij test";
             this.button_test3.UseVisualStyleBackColor = true;
@@ -192,9 +197,10 @@ namespace OSK2
             // 
             // button_results
             // 
-            this.button_results.Location = new System.Drawing.Point(440, 150);
+            this.button_results.Location = new System.Drawing.Point(587, 185);
+            this.button_results.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_results.Name = "button_results";
-            this.button_results.Size = new System.Drawing.Size(263, 43);
+            this.button_results.Size = new System.Drawing.Size(351, 53);
             this.button_results.TabIndex = 7;
             this.button_results.Text = "Pokaż wyniki";
             this.button_results.UseVisualStyleBackColor = true;
@@ -202,30 +208,20 @@ namespace OSK2
             // 
             // button_reset
             // 
-            this.button_reset.Location = new System.Drawing.Point(440, 240);
+            this.button_reset.Location = new System.Drawing.Point(587, 295);
+            this.button_reset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button_reset.Name = "button_reset";
-            this.button_reset.Size = new System.Drawing.Size(263, 42);
+            this.button_reset.Size = new System.Drawing.Size(351, 52);
             this.button_reset.TabIndex = 8;
             this.button_reset.Text = "Nowy tester";
             this.button_reset.UseVisualStyleBackColor = true;
             this.button_reset.Click += new System.EventHandler(this.button_reset_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(474, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "label1";
-            // 
             // Tester
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.button_reset);
             this.Controls.Add(this.button_results);
             this.Controls.Add(this.button_test3);
@@ -236,6 +232,7 @@ namespace OSK2
             this.Controls.Add(this.label_test1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Tester";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
@@ -261,7 +258,6 @@ namespace OSK2
         private System.Windows.Forms.Button button_test3;
         private System.Windows.Forms.Button button_results;
         private System.Windows.Forms.Button button_reset;
-        private System.Windows.Forms.Label label1;
     }
 }
 

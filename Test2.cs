@@ -26,7 +26,6 @@ namespace OSK2
         {
             MessageBox.Show(this.parent.help_test2_message);
         }
-
         private void bulb_Click(object sender, EventArgs e)
         {
             PictureBox[] boxes = { bulb1, bulb2, bulb3 };
@@ -37,7 +36,7 @@ namespace OSK2
             }
             else if (this.on)
             {
-                boxes[number].Load(bulb_off);
+                boxes[number].Image = bulb_off;
                 this.on = false;
             }
         }
@@ -50,7 +49,7 @@ namespace OSK2
                 number = rand_num.Next(0, 3);
                 await Task.Delay(rand_time.Next(time_low, time_high)); // Random delay between 1 to 5 seconds
                 this.on = true;
-                boxes[number].Load(this.bulb_on);
+                boxes[number].Image = bulb_on;
                 clock.Start();
                 this.testing = true;
                 // Wait for user click
@@ -73,7 +72,6 @@ namespace OSK2
             button_start.Enabled = true;
             label_result.Text = "Koniec testu! Zapisz wynik lub spróbuj ponownie";
         }
-
         private void button_save_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < this.result.Length; i++)
@@ -81,16 +79,17 @@ namespace OSK2
                 this.parent.results[1, i] = this.result[i];
             }
         }
-
         private void quit_Click(object sender, EventArgs e)
         {
+            this.clock.Reset();
             for (int i = 0; i < this.result.Length; i++)
             {
                 this.result[i] = 0;
                 this.parent.results[1, i] = 0;
             }
+            this.Dispose();
+            this.Close();
         }
-
         private void test2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(this.parent.help_test2_message);

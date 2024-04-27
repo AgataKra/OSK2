@@ -1,4 +1,4 @@
-﻿
+﻿using System.Drawing;
 namespace OSK2
 {
     partial class Test2
@@ -8,8 +8,8 @@ namespace OSK2
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         public Tester parent;
-        private string bulb_off = "light_off.png";
-        private string bulb_on = "light_on.png";
+        private Image bulb_off = OSK2.Properties.Resources.light_off;
+        private Image bulb_on = OSK2.Properties.Resources.light_on;
         private int time_low = 500;
         private int time_high = 1000;
         private bool testing = false;

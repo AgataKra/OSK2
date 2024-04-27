@@ -18,24 +18,21 @@ namespace OSK2
             this.parent = parent;
             InitializeComponent();
         }
-        SoundPlayer sound = new SoundPlayer("sound.wav");
+        SoundPlayer sound = new SoundPlayer(OSK2.Properties.Resources.sound);
         public Stopwatch clock = new Stopwatch();
         Random rand = new Random();
         private void Test3_Load(object sender, EventArgs e)
         {
             MessageBox.Show(this.parent.help_test3_message);
         }
-
         private void state_Click(object sender, EventArgs e)
         {
 
         }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
         private async void button_start_Click(object sender, EventArgs e)
         {
             button_start.Enabled = false;
@@ -68,7 +65,6 @@ namespace OSK2
             button_start.Enabled = true;
             label_result.Text = "Koniec testu! Zapisz wynik lub spróbuj ponownie";
         } 
-
         private void panel_test_click(object sender, EventArgs e)
         {
             if (this.testing)
@@ -82,7 +78,6 @@ namespace OSK2
                 this.label_result.Text = "";
             }
         }
-
         private void button_save_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < this.result.Length; i++)
@@ -90,7 +85,6 @@ namespace OSK2
                 this.parent.results[1, i] = this.result[i];
             }
         }
-
         private void button_quit_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < this.result.Length; i++)
@@ -98,8 +92,9 @@ namespace OSK2
                 this.result[i] = 0;
                 this.parent.results[2, i] = 0;
             }
+            this.Dispose();
+            this.Close();
         }
-
         private void test3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(this.parent.help_test3_message);

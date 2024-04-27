@@ -26,7 +26,6 @@ namespace OSK2
             this.label_result.Text = "";
             MessageBox.Show(this.parent.help_test1_message);
         }
-
         private async void button_start_Click(object sender, EventArgs e)
         {
             button_start.Enabled = false;
@@ -60,12 +59,10 @@ namespace OSK2
             label_result.Text = "Koniec testu! \n Zapisz wynik lub spróbuj ponownie";
             this.BackColor = Color.Gray;
         }
-
         private void panel_test_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
         private void panel_test_Click(object sender, EventArgs e)
         {
             if (panel_test.BackColor == Color.Green && this.testing)
@@ -78,7 +75,6 @@ namespace OSK2
                 label_result.Text = "";
             }
         }
-
         private void save_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < this.result.Length; i++)
@@ -86,7 +82,6 @@ namespace OSK2
                 this.parent.results[0, i] = this.result[i];
             }
         }
-
         private void quit_Click(object sender, EventArgs e)
         {
             for (int i = 0; i < this.result.Length; i++)
@@ -94,8 +89,9 @@ namespace OSK2
                 this.result[i] = 0;
                 this.parent.results[0, i] = 0;
             }
+            this.Dispose();
+            this.Close();
         }
-
         private void help_test1_Click(object sender, EventArgs e)
         {
             MessageBox.Show(this.parent.help_test1_message);
